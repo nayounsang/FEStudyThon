@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.line-limit-1 {
+  @apply overflow-hidden overflow-ellipsis whitespace-nowrap;
+}
+
