@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const data: { name: string; url: string; id: number }[] = [
   { name: "작성하기", url: "/write", id: 0 },
-  { name: "이번 주", url: "/", id: 1 },
+  { name: "이번 주", url: "/study/1", id: 1 },
   { name: "이전 스터디", url: "/", id: 2 },
 ];
 

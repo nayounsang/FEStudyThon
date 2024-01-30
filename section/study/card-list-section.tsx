@@ -3,13 +3,14 @@ import SortChips from "@/component/sort-chips";
 
 interface PropType {
   sort: "like" | "latest";
+  studyId: string;
 }
 
-const CardListSection = ({ sort }: PropType) => {
+const CardListSection = ({ sort, studyId }: PropType) => {
   return (
     <section className="flex flex-col self-center gap-10 lg:w-[1000px] md:w-full">
-      <SortChips sort={sort} />
-      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-10">
+      <SortChips sort={sort} baseURL={`/study/${studyId}/`} />
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-10">
         <CardPreview
           data={{
             id: 1,

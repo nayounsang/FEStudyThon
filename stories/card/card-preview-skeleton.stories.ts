@@ -1,4 +1,4 @@
-import CardPreviewSkeleton from "@/component/card/card-preview/skeleton";
+import CardPreviewSkeleton from "@/component/card-preview/skeleton";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

@@ -18,7 +18,7 @@ const LinkPreview = async ({ url }: PropType) => {
         cursor-pointer 
         w-full h-full 
         border-2 border-gray-200
-         hover:border-black 
+         hover:border-indigo-900
          text-xs font-extralight text-slate-600`}
       >
         <Link href={url}>

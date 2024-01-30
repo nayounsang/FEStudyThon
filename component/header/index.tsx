@@ -1,5 +1,5 @@
 "use client";
-import HamburgerIcon from "../icon/hamburger";
+import HamburgerIcon from "../atom/icon/hamburger";
 import MenuBar from "./menubar";
 
 const Header = () => {

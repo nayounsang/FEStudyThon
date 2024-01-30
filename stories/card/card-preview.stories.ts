@@ -1,4 +1,4 @@
-import CardPreview from "@/component/card/card-preview";
+import CardPreview from "@/component/card-preview";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

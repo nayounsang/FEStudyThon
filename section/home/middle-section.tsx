@@ -1,5 +1,5 @@
 import { BigTitle } from "@/component/typography";
-import WeeklyArticle from "@/component/weekly-article";
+import WeeklyArticle from "@/component/atom/weekly-article";
 import Link from "next/link";
 
 const MiddleSection = () => {

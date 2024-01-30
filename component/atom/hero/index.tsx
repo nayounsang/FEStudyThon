@@ -1,4 +1,4 @@
-import { BigTitle, Sub1 } from "../typography";
+import { BigTitle, Sub1 } from "../../typography";
 
 interface PropType {
   title: string;

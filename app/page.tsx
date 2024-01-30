@@ -1,4 +1,4 @@
-import Hero from "@/component/hero";
+import Hero from "@/component/atom/hero";
 import CardListSection from "@/section/home/card-list-section";
 import MiddleSection from "@/section/home/middle-section";
 

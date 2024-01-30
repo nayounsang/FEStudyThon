@@ -3,6 +3,7 @@ const imageHostLinks = [
   "opengraph.githubassets.com",
   "img1.daumcdn.net",
   "velog.velcdn.com",
+  "www.notion.so",
 ];
 const nextConfig = {
   images: {
