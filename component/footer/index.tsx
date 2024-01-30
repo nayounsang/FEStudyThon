@@ -1,6 +1,6 @@
 "use client";
 
-import Hero from "../hero";
+import Hero from "../atom/hero";
 
 const Footer = () => {
   return <div className="bg-white h-48 w-full border-t-2 border-neutral-200 py-5 px-10">

@@ -19,8 +19,27 @@ export const H1 = ({children}:PropType) => {
     )
 }
 
+
+export const H2 = ({children}:PropType) => {
+  return(
+      <h1 className="text-neutral-700 text-xl">{children}</h1>
+  )
+}
+
+export const Body1 = ({children}:PropType) => {
+  return(
+      <p className="text-slate-800 text-lg">{children}</p>
+  )
+} 
+
 export const Sub1 = ({children}:PropType) => {
     return(
         <p className="text-slate-500 text-base">{children}</p>
     )
+} 
+
+export const Sub2 = ({children}:PropType) => {
+  return(
+      <p className="text-slate-500 text-sm">{children}</p>
+  )
 } 

@@ -10,6 +10,7 @@ interface PropType {
 const Chip = ({ text, active, onClick = () => {} }: PropType) => {
   return (
     <button
+      name={text}
       onClick={onClick}
       className={`${
         active
