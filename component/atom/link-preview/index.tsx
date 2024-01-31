@@ -1,5 +1,5 @@
 import getOgTags from "@/util/getOgTags";
-import LinkPreviewContainer from "../container/link-preview-container";
+import LinkPreviewContainer from "./link-preview-container";
 import Image from "next/image";
 import Link from "next/link";
 import LinkPreviewText from "./link-preview-text";

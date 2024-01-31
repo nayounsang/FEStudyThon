@@ -1,6 +1,6 @@
 import PulseDiv from "@/component/atom/pulse-div";
-import CardPreviewContainer from "./container/card-preview-container";
-import LinkPreviewContainer from "./container/link-preview-container";
+import CardPreviewContainer from "./card-preview-container";
+import LinkPreviewContainer from "../atom/link-preview/link-preview-container";
 
 const CardPreviewSkeleton = () => {
   return (

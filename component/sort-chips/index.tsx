@@ -6,7 +6,8 @@ interface PropType {
   baseURL?: string;
 }
 
-const SortChips = ({ sort, baseURL = "/" }: PropType) => {
+const SortChips = ({ sort, baseURL = "/"}: PropType) => {
+ 
   return (
     <div className="flex gap-5">
       <Link

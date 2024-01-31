@@ -2,15 +2,13 @@ import { BigTitle, H1, Sub1 } from "../../typography";
 
 interface PropType {
   content: string;
-  description?: string;
 }
 
-const WeeklyArticle = ({ content, description = "" }: PropType) => {
+const WeeklyArticle = ({ content}: PropType) => {
   return (
     <div className="flex flex-col gap-2">
       <BigTitle text="이번주 주제" />
-      <H1>{content}</H1>
-      <Sub1>{description}</Sub1>
+      <Sub1>{content}</Sub1>
     </div>
   );
 };

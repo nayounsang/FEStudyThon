@@ -1,7 +1,7 @@
 import { CardDataType } from "@/type/card.type";
 import Author from "../atom/author";
-import LinkPreview from "./link-preview";
-import CardPreviewContainer from "./container/card-preview-container";
+import LinkPreview from "../atom/link-preview";
+import CardPreviewContainer from "./card-preview-container";
 import DescriptionPreview from "./description-preview";
 import { Suspense } from "react";
 import CardPreviewSkeleton from "./skeleton";
@@ -16,7 +16,7 @@ const CardPreview = ({ data }: PropType) => {
     <Suspense fallback={<CardPreviewSkeleton />}>
       <CardPreviewContainer>
         <LinkPreview url={data.url} />
-        <Link href={`/`}>
+        <Link href={`/post/${data.id}`}>
           <div className="border-t-2 hover:text-indigo-800 hover:border-indigo-700 ">
             <Author text={data.author} />
             <DescriptionPreview text={data.description} />
