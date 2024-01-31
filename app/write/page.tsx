@@ -21,7 +21,7 @@ const Write = () => {
           />
         </label>
         <label>
-          <Body1>설명</Body1>
+          <Body1>요약</Body1>
           <textarea
             rows={4}
             className={`${inputClass} resize-none`}
