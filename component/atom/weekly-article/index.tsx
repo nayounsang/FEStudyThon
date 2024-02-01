@@ -7,7 +7,7 @@ interface PropType {
 const WeeklyArticle = ({ content}: PropType) => {
   return (
     <div className="flex flex-col gap-2">
-      <BigTitle text="이번주 주제" />
+      <BigTitle text="이번주 스터디" />
       <Sub1>{content}</Sub1>
     </div>
   );

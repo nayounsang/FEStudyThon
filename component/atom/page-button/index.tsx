@@ -43,7 +43,7 @@ const PageButton = ({
     <Link href={{ pathname: pathname, query: query }} scroll={false}>
       <button
         name={value}
-        className={`w-[2.5rem] h-[2.5rem] rounded-full ${className} text-base`}
+        className={`w-[2rem] h-[2rem] text-sm md:w-[2.5rem] md:h-[2.5rem] md:text-base rounded-full ${className} `}
         disabled={cur === value || Number(value) <= 0}
       >
         {getNode({

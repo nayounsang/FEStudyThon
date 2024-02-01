@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export const BigTitle = ({ text }: { text: string }) => {
   return (
-    <h1 className=" text-black text-5xl font-bold">
+    <h1 className=" text-black text-3xl  md:text-5xl font-bold">
       <span className=" text-indigo-700">{text[0]}</span>
       {text.slice(1, text.length) + "."}
     </h1>

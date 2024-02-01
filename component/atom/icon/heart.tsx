@@ -9,7 +9,7 @@ export const HeartEmptyIcon = ({ width, height }: PropType) => {
   return (
     <Image
       src="/icon/heart-empty.svg"
-      alt="next"
+      alt="heart"
       width={width}
       height={height}
     />
