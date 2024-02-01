@@ -1,5 +1,4 @@
 import Hero from "@/component/atom/hero";
-import StudyElement from "@/component/atom/study-element";
 import StudyListSection from "@/section/list/study-list-section";
 
 
