@@ -7,9 +7,9 @@ interface PropType {
 
 const CardListSection = ({ sort }: PropType) => {
   return (
-    <section className="flex flex-col self-center gap-10 lg:w-[1000px] md:w-full">
+    <section className="flex flex-col self-center gap-10 w-full">
       <SortChips sort={sort} />
-      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-10">
+      <div className="flex flex-wrap justify-between gap-10">
         <CardPreview
           data={{
             id: 1,
