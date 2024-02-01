@@ -15,7 +15,16 @@ const config: Config = {
       },
       colors: {
         "almost-white": "#fdfdfd",
-      }
+      },
+      keyframes: {
+        myPulse: {
+          '0%,100%': { backgroundColor:"#d1d5db" },
+          '50%': { backgroundColor:"#6b7280" },
+        },
+      },
+      animation: {
+        pulse: "myPulse 1.5s ease infinite",
+      },
     },
   },
   plugins: [],
