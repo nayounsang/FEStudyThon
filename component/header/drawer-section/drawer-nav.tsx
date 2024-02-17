@@ -3,14 +3,11 @@ import { navData } from "../data/nav-data";
 import { useContext, useEffect } from "react";
 import { DrawerContext } from ".";
 import { useRouter } from "next/navigation";
+import Logout from "@/component/atom/logout";
 
 const DrawerNav = () => {
-  const { setIsOpen } = useContext(DrawerContext);
+  const { setIsOpen, status } = useContext(DrawerContext);
   const router = useRouter();
-
-  console.log(router);
-
-  useEffect(() => {}, []);
 
   const handleClick = async (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -34,6 +31,19 @@ const DrawerNav = () => {
           {e.name}
         </Link>
       ))}
+      {status === 200 ? (
+        <Logout className="text-2xl rounded-sm text-center text-indigo-700 font-semibold" />
+      ) : (
+        <Link
+          onClick={(event) => {
+            handleClick(event, "/login");
+          }}
+          href="/login"
+          className="text-2xl rounded-sm text-center text-indigo-700 font-semibold"
+        >
+          로그인
+        </Link>
+      )}
     </nav>
   );
 };

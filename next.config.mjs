@@ -4,6 +4,7 @@ const imageHostLinks = [
   "img1.daumcdn.net",
   "velog.velcdn.com",
   "www.notion.so",
+  "images.velog.io",
 ];
 const nextConfig = {
   images: {
@@ -14,6 +15,7 @@ const nextConfig = {
       pathname: "/**",
     })),
   },
+  
 };
 
 export default nextConfig;

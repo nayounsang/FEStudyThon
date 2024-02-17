@@ -3,17 +3,24 @@ import HamburgerIcon from "@/component/atom/icon/hamburger";
 import { createContext, useState } from "react";
 import Drawer from "./drawer";
 
+interface PropType {
+  status: number;
+}
+
 export const DrawerContext = createContext<{
   isOpen: boolean;
   setIsOpen: (state: boolean) => void;
-}>({ isOpen: false, setIsOpen: () => {} });
+  status: number;
+}>({ isOpen: false, setIsOpen: () => {}, status: 401 });
 
-const DrawerSection = () => {
+const DrawerSection = ({ status }: PropType) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="md:hidden">
-      <DrawerContext.Provider value={{ isOpen: isOpen, setIsOpen: setIsOpen }}>
+      <DrawerContext.Provider
+        value={{ isOpen: isOpen, setIsOpen: setIsOpen, status: status }}
+      >
         <button
           name="menu"
           onClick={() => {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navData } from "./data/nav-data";
+import { navData } from "../data/nav-data";
 
 const MenuBar = () => {
   return (

@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/component/header";
 import Footer from "@/component/footer";
+import { Suspense } from "react";
+import NavEvent from "@/component/nav-event";
+import NavFallback from "@/component/nav-event/nav-fallback";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +25,9 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer/>
+        <Suspense fallback={<NavFallback/>}>
+          <NavEvent/>
+        </Suspense>
       </body>
     </html>
   );
